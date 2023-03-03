@@ -18,7 +18,12 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
+
+  <!-- ======================HEADER -->
   <body>
     <header class="page-header">
       <div class="page-header-container container">
@@ -59,6 +64,79 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
             </li>
           </ul>
         </address>
+        <button class="menu-open" data-menu-open type="button">O</button>
+      </div>
+
+
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <div>
+        <button class="menu-close" data-menu-close type="button">X</button>
+        <ul class="menu list mob-menu-nav">
+          <li class="mob-menu-item">
+            <a
+              class="mob-menu-link menu-link-studio menu-link-active link current"
+              href="./index.html"
+              >Studio</a
+            >
+          </li>
+          <li class="mob-menu-item">
+            <a class="mob-menu-link link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="mob-menu-link link" href="">Contacts</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <address>
+          <ul class="menu list mob-menu-adress">
+            <li>
+              <a
+                class="mob-addres-link link-mail link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="mob-addres-link-tel link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="social-list list mob">
+          <li class="social-list-item">
+            <a href="" class="social-list-link">
+              <svg class="social-link-icon" width="16" height="16">
+                <use href="./images/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a href="" class="social-list-link">
+              <svg class="social-link-icon" width="16" height="16">
+                <use href="./images/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a href="" class="social-list-link">
+              <svg class="social-link-icon" width="16" height="16">
+                <use href="./images/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a href="" class="social-list-link">
+              <svg class="social-link-icon" width="16" height="16">
+                <use href="./images/sprite.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      </div>
       </div>
     </header>
 
@@ -72,10 +150,10 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
             Order Service
           </button>
         </div>
-      </section>
+      </section> 
 
       <!-- =============ABOUT US ==========-->
-      <section class="about-section">
+      <section class="section">
         <h2 class="visually-hidden">About us</h2>
         <div class="container">
           <ul class="about-us-list list">
@@ -140,6 +218,8 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
               <img
                 src="./images/imga.jpg"
                 alt="computer screen"
+                srcset="./images/imga.jpg 1x, 
+                ./images/imga2x-min.jpg 2x"
                 width="360"
                 height="300"
               />
@@ -148,6 +228,8 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
               <img
                 src="./images/imgb.jpg"
                 alt="telephones screen"
+                srcset="./images/imgb.jpg 1x, 
+                ./images/imgb2x-min.jpg 2x"
                 width="360"
                 height="300"
               />
@@ -156,6 +238,8 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
               <img
                 src="./images/imgc.jpg"
                 alt="telephone in hand"
+                srcset="./images/imgc.jpg 1x, 
+                ./images/imgc2x-min.jpg 2x"
                 width="360"
                 height="300"
               />
@@ -171,9 +255,12 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
           <h2 class="team-header">Our Team</h2>
           <ul class="team-list list">
             <li class="team-card">
+              
               <img
                 src="./images/guerrero.jpg"
                 alt="guerrero"
+                srcset="./images/guerrero.jpg 1x, 
+                ./images/guerrero2x-min.jpg 2x"
                 width="264"
                 height="260"
               />
@@ -217,6 +304,8 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
               <img
                 src="./images/ford.jpg"
                 alt="ford"
+                srcset="./images/ford.jpg 1x, 
+                ./images/ford2x-min.jpg 2x"
                 width="264"
                 height="260"
               />
@@ -260,6 +349,8 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
               <img
                 src="./images/garsia.jpg"
                 alt="garsia"
+                srcset="./images/garsia.jpg 1x, 
+                ./images/garsia2x-min.jpg 2x"
                 width="264"
                 height="260"
               />
@@ -303,6 +394,8 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
               <img
                 src="./images/wilson.jpg"
                 alt="wilson"
+                srcset="./images/wilson.jpg 1x, 
+                ./images/wilson2x-min.jpg 2x"
                 width="264"
                 height="260"
               />
@@ -346,7 +439,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
       </section>
 
       <!-- ===============CUSTOMERS -->
-      <section class="section">
+      <section class="section cust-container">
         <div class="container">
           <h2 class="cust-header">Customers</h2>
           <ul class="customers-list list">
@@ -400,7 +493,8 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
     <!-- ===================FFOOTER ========-->
     <footer class="footer-color">
       <div class="container ftr-container">
-        <div>
+        <div class="cnd-container">
+        <div class="st-ftr-container">
           <a class="logo link" href="./index.html">
             <span class="span-web">Web</span>
             <span class="span-studio span-white">Studio</span>
@@ -444,6 +538,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
             </li>
           </ul>
         </div>
+      </div>
 
                   <form class="subscribe-form">
             <p class="sbc-dscr">Subscribe</p>
@@ -466,9 +561,9 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
           </form>
         
       </div>
-    </footer>
+    </footer> 
 
-    <div class="backdrop is-hidden" data-modal>
+     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-button" data-modal-close>
           <svg class="modal-close-icon" wigth="8" height="8">
@@ -554,8 +649,9 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
           </div>
         </form>
       </div>
-    </div>
+    </div> 
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

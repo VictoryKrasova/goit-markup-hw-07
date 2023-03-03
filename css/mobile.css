@@ -1,0 +1,28 @@
+@media screen and (min-width: 480px) {
+    .container {
+      max-width: 426px;
+    }
+    .section {
+      padding-top: 96px;
+      padding-bottom: 96px;
+    }
+  
+    .team-section > .container {
+      max-width: 290px;
+    }
+  
+    .third-header {
+      display: flex;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.11;
+      text-align: center;
+      letter-spacing: 0.02em;
+      color: #2e2f42;
+    }
+
+    .customers-list{
+        gap: 16px;
+    }
+  }

@@ -1,0 +1,139 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 766px;
+  }
+  .section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .team-card {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .about-us-list {
+    justify-content: center;
+  }
+
+  .about-list {
+    width: 264px;
+  }
+  .team-section > .container {
+    max-width: 552px;
+  }
+
+  .third-header {
+    justify-content: left;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+  }
+
+  .main-header {
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 40px;
+  }
+
+  .cust-container > .container{
+    max-width: 552px;
+  }
+
+  .customers-link {
+    width: 168px;
+  }
+
+  .customers-list {
+    display: flex;
+    flex-wrap: wrap;
+      }
+
+  .customers-item{
+    width: calc((100% - 48px) / 3);
+  }
+
+  .hero {
+    padding-top: 112px;
+      background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-tabx1.jpg);
+    background-size: cover;
+    background-color: #2e2f42;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ), url(../images/hero-tabx2.jpg);
+  }
+}
+
+.menu-nav {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .menu-adress {
+    display: flex;
+    gap: 40px;
+  }
+
+  .menu-nav {
+  display: flex;
+  gap: 40px;
+}
+
+.menu-adress {
+  display: block;
+  gap: 40px;
+}
+
+.page-header-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .portfolion-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 72px;
+    justify-content: center;
+    align-items: center;
+   }
+
+      /* .subscribe-form{
+        display: flex;
+      } */
+
+      .scb-container{
+        display: flex;
+      }
+
+      .sbc-input {
+         width: 264px;
+      }
+
+      .logo{
+        justify-content: flex-start;
+      }
+
+      .ftr-container{
+        display: block;
+      }
+
+      .cnd-container{
+        display: flex;
+      }
+    }
