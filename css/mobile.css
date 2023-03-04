@@ -1,6 +1,8 @@
 @media screen and (min-width: 480px) {
     .container {
-      max-width: 426px;
+      width: 426px;
+      margin-left: auto;
+      margin-right: auto;
     }
     .section {
       padding-top: 96px;
@@ -23,6 +25,27 @@
     }
 
     .customers-list{
-        gap: 16px;
+        gap: 72px 16px;
+    }
+  }
+
+  @media screen and (max-width:767px){
+    .modal-btn{
+      width: 95%;
+      max-width: 392px;
+      height: 95%;
+      max-height: 586px;
+      overflow: scroll;
+    }
+
+    .logo{
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .subscribe-form{
+      display: block;
+      justify-content: center;
+      align-items: center;
     }
   }

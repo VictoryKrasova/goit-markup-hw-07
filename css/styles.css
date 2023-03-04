@@ -73,10 +73,9 @@ body {
 }
 
 .container {
-  width: 1158px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
+  /* /* width: 1158px; */
+  width: 100%;
+   padding-left: 15px;
   padding-right: 15px;
 }
 
@@ -223,23 +222,6 @@ address {
 
 /* =========MOB MENU */
 
-.mob-menu{
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  z-index: 1;
-}
-
-.menu-close{
-  display: block;
-  margin-left: auto;
-  margin-bottom: 16px;
-}
-
 .mob-menu-link{
   font-weight: 700;
 font-size: 36px;
@@ -283,13 +265,67 @@ margin-bottom: 48px;
 display: block;
   }
 
-  .mob-menu > .container{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow-y: auto;
+    .mob-cont-second{
+    margin-top: auto;
   }
+
+  .menu-open{
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    padding-top: 40px;
+  padding-bottom: 40px;
+  z-index: 1;
+  }
+
+  .menu-open .icon-menu{
+    display: none;
+  }
+
+  .menu-open.is-open .icon-menu {
+    display: block;
+  }
+
+  .menu-open.is-open .icon-cross{
+    display: none;
+  }
+
+  .icon-menu{
+  stroke: #2E2F42;
+}
+
+.page-header{
+  position: relative;
+}
+.mobile-menu{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 796px;
+    background-color: #ffffff;
+  padding: 40px;
+  text-align: center;
+  font-size: 36px;
+  z-index: 10;
+  margin-left: auto;
+      margin-right: auto
+    }
+    
+    .mobile-menu > .container{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow-y: auto;
+    }
+
+   .mobile-menu.is-open{
+    display: block;
+   }
 /* ================HERO ================ */
 
 .main-header {
@@ -302,6 +338,7 @@ display: block;
   margin-bottom: 72px;
     margin-left: auto;
   margin-right: auto;
+  max-width: 320px;
 }
 
 .hero {
@@ -353,7 +390,7 @@ display: block;
 
 .about-us-list {
   display: flex;
-  gap: 72px;
+  gap: 72px 24px;
   flex-wrap: wrap;
 }
 
@@ -399,7 +436,7 @@ display: block;
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 64px 24px;
 }
 .card-wrapper {
   padding-top: 32px;
@@ -458,6 +495,8 @@ display: block;
 .customers-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
   
 }
 
@@ -485,12 +524,22 @@ display: block;
   border: 1px solid currentColor;
   border-radius: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-margin-bottom: 72px;
 }
 
 .customers-link:hover,
 .customers-link:focus {
   color: #404bbf;
+}
+
+.third-header {
+  justify-content: left;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  display: flex;
+    justify-content: center;
 }
 
 /* ===============Footr============ */
@@ -504,19 +553,15 @@ margin-bottom: 72px;
   color: #e7e9fc;
   margin-top: 16px;
   width: 264px;
-  margin-bottom: 72px;
+  margin: 0 auto;
 }
 
 .st-ftr-container{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.logo{
-  display: flex;
-  justify-content: center;
+    display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 16px;
+  margin-bottom: 72px;
 }
 
 .footer-color {
@@ -524,11 +569,6 @@ margin-bottom: 72px;
   padding-top: 100px;
   padding-bottom: 100px;
 
-}
-
-.ftr-container {
-  /* display: flex; */
-  display: block;
 }
 
 .media-container {
@@ -593,6 +633,7 @@ margin-bottom: 72px;
   margin-left: auto;
   margin-right: auto;
   border: none;
+  margin-top: 16px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -603,11 +644,11 @@ margin-bottom: 72px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.subscribe-form{
+/* .subscribe-form{
   display: block;
   justify-content: center;
   align-items: center;
-}
+} */
 .sbc-input {
     background-color: transparent;
   width: 100%;
@@ -619,8 +660,8 @@ margin-bottom: 72px;
   padding-left: 16px;
   outline: none;
   margin-right: 24px;
-  margin-bottom: 16px;
- margin-left: auto;
+   margin-left: auto;
+ margin: 0;
 }
 
 .sbc-input::placeholder {
@@ -650,9 +691,6 @@ margin-bottom: 72px;
   align-items: center;
 }
 
-.st-ftr-container{
-  display: block;
-}
 /* ================Portfolio ================ */
 
 .visually-hidden {
@@ -795,6 +833,11 @@ margin-bottom: 72px;
   width: 100%;
   height: 100%;
   z-index: 100;
+  padding-top: 96px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 114px;
+  overflow-y: scroll;
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);

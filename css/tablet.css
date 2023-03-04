@@ -1,7 +1,16 @@
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 766px;
+    width: 766px;
   }
+
+  .main-header {
+    max-width: 496px;
+  }
+
+  .menu-open{
+    display: none;
+
+      }
   .section {
     padding-top: 96px;
     padding-bottom: 96px;
@@ -15,12 +24,10 @@
     padding-top: 96px;
     padding-bottom: 96px;
   }
-  .about-us-list {
-    justify-content: center;
-  }
+  
 
   .about-list {
-    width: 264px;
+    width: 356px;
   }
   .team-section > .container {
     max-width: 552px;
@@ -52,6 +59,7 @@
   .customers-list {
     display: flex;
     flex-wrap: wrap;
+    gap: 72px 24px;
       }
 
   .customers-item{
@@ -113,27 +121,34 @@
     align-items: center;
    }
 
-      /* .subscribe-form{
-        display: flex;
-      } */
-
+    
       .scb-container{
         display: flex;
       }
 
       .sbc-input {
          width: 264px;
+               }
+
+          .ftr-container {
+            display: flex;
+            gap: 72px 24px;
+            flex-wrap: wrap;
+            max-width: 550px;
+                     }
+         .st-ftr-container{
+          align-items: flex-start;
+         }
+         .social-list-ftr{
+          align-items: flex-start;
+         }
+         .ftr-head{
+          align-items: flex-start;
+         }
+         .media-container{
+          width: 208px;
+          margin-right: 0;
+         }
       }
 
-      .logo{
-        justify-content: flex-start;
-      }
-
-      .ftr-container{
-        display: block;
-      }
-
-      .cnd-container{
-        display: flex;
-      }
-    }
+    
