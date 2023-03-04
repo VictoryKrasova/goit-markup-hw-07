@@ -64,10 +64,14 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
             </li>
           </ul>
         </address>
-
+        <button type="button" class="mobile-menu-open" data-menu-open>
+          <svg class="mobile-menu-open-icon" width="30" height="19">
+            <use href="./images/sprite.svg#menu"></use>
+          </svg>
+        </button>
 
       <!-- =============MOB MENU============== -->
-        <button 
+        <!-- <button 
         class="menu-open is-open" data-menu-button 
         type="button"
         aria-expanded="false"
@@ -77,14 +81,18 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
             <use class="icon-menu" href="./images/sprite.svg#menu"></use>
             <use class="icon-cross" href="./images/sprite.svg#cross"></use>
           </svg>
-        </button>
+        </button> -->
 
-        <div class="mobile-menu" id="mobile-menu" data-menu>
-          <div class="container">
-            <div>
+        <div class="mobile-menu" data-menu>
+          <div class="container mobile-menu-cont">
 
-              
-          <ul class="menu list mob-menu-nav">
+            <button type="button" class="mobile-menu-close" data-menu-close>
+              <svg class="mobile-menu-close-icon" width="30" height="19">
+                <use href="./images/sprite.svg#cross"></use>
+              </svg>
+            </button>
+
+            <ul class="menu list mob-menu-nav">
             <li class="mob-menu-item">
               <a
                 class="mob-menu-link menu-link-studio menu-link-active link current"
@@ -99,7 +107,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
               <a class="mob-menu-link link" href="">Contacts</a>
             </li>
           </ul>
-        </div>
+        
 
 
         <div class="mob-cont-second">
@@ -150,6 +158,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
             </li>
           </ul>
         </div>
+      </div>
           </div>
         </div>
                 </header>

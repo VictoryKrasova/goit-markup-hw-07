@@ -3,17 +3,18 @@
     width: 766px;
   }
 
+
   .main-header {
     max-width: 496px;
   }
 
-  .menu-open{
+  .mobile-menu-open-icon{
     display: none;
 
       }
   .section {
-    padding-top: 96px;
-    padding-bottom: 96px;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 
   .team-card {
@@ -24,7 +25,29 @@
     padding-top: 96px;
     padding-bottom: 96px;
   }
-  
+  @media screen and (max-width: 1157px) {
+    .section{
+      padding-top: 96px;
+      padding-bottom: 96px;
+    }
+    .page-header{
+      padding-top: 13px;
+    padding-bottom: 13px;
+    }
+  }
+  .sbc-dscr{
+    justify-content: flex-start; 
+  }
+  .ftr-head {
+    justify-content: flex-start; 
+  }
+  .scb-container{
+    gap: 24px;
+  }
+
+  .sbc-btn{
+    margin: 0;
+  }
 
   .about-list {
     width: 356px;
@@ -146,10 +169,15 @@
           align-items: flex-start;
          }
          .media-container{
-          width: 208px;
+          
           margin-right: 0;
+         }
+
+         .cnd-container{
+          display: flex;
+          gap: 24px;
          }
          
       }
 
-    
+      
