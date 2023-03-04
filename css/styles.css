@@ -644,11 +644,7 @@ display: block;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-/* .subscribe-form{
-  display: block;
-  justify-content: center;
-  align-items: center;
-} */
+
 .sbc-input {
     background-color: transparent;
   width: 100%;
